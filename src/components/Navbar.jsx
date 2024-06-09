@@ -1,14 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
         <div>
             <nav class="navbar bg-primary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <Link class="navbar-brand" to="#">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/FISAT_LOGO.png" alt="Logo" width="90" height="80" class="d-inline-block align-text-center"></img>
                         <b style={{ fontSize: '30px' }}>FISAT</b>
-                    </a>
+                    </Link>
                 </div>
             </nav>
             <nav class="navbar navbar-expand-lg bg-warning">
@@ -17,13 +18,13 @@ const Navbar = () => {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><b>Add Student</b></a>
+                                <Link class="nav-link active" aria-current="page" to="/"><b>Add Student</b></Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><b>Search Student</b></a>
+                                <Link class="nav-link" to="/search"><b>Search Student</b></Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><b>Student Details</b></a>
+                                <Link class="nav-link" to="/view"><b>Student Details</b></Link>
                             </li>
                             
                         </ul>

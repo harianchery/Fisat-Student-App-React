@@ -31,6 +31,7 @@ const AddStudent = () => {
                     <h2 align="center" ><b>WELCOME TO FISAT</b></h2>
                     <br></br>
                     <h3 align="center"><b>Please Enter your Details</b></h3>
+                    <br></br>
                     <div className="row g-3">
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">First Name</label>

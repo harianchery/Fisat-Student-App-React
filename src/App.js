@@ -4,15 +4,17 @@ import AddStudent from './components/AddStudent';
 import Search from './components/Search';
 import View from './components/View';
 import Navbar from './components/Navbar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div >
-      <AddStudent/>
-      <Search/>
-      <View/>
-     
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<AddStudent/>}/>,
+      <Route path='/search' element={<Search/>}/>,
+      <Route path='/view' element={<View/>}/>,
+    </Routes>
+    </BrowserRouter>
   );
 }
 
