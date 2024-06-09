@@ -3,6 +3,7 @@ import './App.css';
 import AddStudent from './components/AddStudent';
 import Search from './components/Search';
 import View from './components/View';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <AddStudent/>
       <Search/>
       <View/>
+     
     </div>
   );
 }

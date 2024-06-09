@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Navbar from './Navbar'
 
 const Search = () => {
     const[student,changeStudent]=useState(
@@ -12,8 +13,10 @@ const Search = () => {
     const readValue=()=>{
         console.log(student)
     }
+    
   return (
     <div>
+        <Navbar/>
         <h3 align="center"><b>Please enter the Student name to Search</b></h3>
         <div className="container">
             <div className="row g-3">
