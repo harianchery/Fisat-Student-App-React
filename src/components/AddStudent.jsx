@@ -4,8 +4,8 @@ import Navbar from './Navbar'
 const AddStudent = () => {
     const[student,changeStudent]=useState(
         {
-            "fname":"",
-            "lname":"",
+            "firstname":"",
+            "lastname":"",
             "college":"",
             "dob":"",
             "mobile":"",
@@ -35,11 +35,11 @@ const AddStudent = () => {
                     <div className="row g-3">
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">First Name</label>
-                            <input type="text" className="form-control" name='fname' value={student.fname} onChange={InputHandler} />
+                            <input type="text" className="form-control" name='firstname' value={student.firstname} onChange={InputHandler} />
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">Last Name</label>
-                            <input type="text" className="form-control" name='lname' value={student.lname} onChange={InputHandler}/>
+                            <input type="text" className="form-control" name='lastname' value={student.lastname} onChange={InputHandler}/>
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">College</label>
